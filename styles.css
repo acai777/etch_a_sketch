@@ -17,7 +17,7 @@
     /* min-width: calc((100%/16) - .3%); THIS WORKS BUT NOT IN THE WAY YOU INTEND IT TO. This is because you cannot see the widths when everything is clumped together and has no height. NOTE: YOU ARE BASING THIS OFF THE PARENT ELEMENT WHICH IS THE PARENT DIV.*/ 
     min-height: 1rem; /* NEED SOMETHING LIKE THIS */
     border-color: black;
-    border-style: dotted; 
+    border-style: solid; 
 }
 
 /* body *{
