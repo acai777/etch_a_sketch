@@ -1,2 +1,2 @@
-# etch_a_sketch
-This is my Etch-A-Sketch project to work on DOM manipulation skills. Directions are from The Odin Project.
+# Etch A Sketch
+This is my Etch-A-Sketch project. Focus is on flexing DOM manipulation techniques. Directions are from The Odin Project.
