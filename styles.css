@@ -3,23 +3,21 @@
 } 
 /* This code is the life-saver. If you set box-sizing: border-box; on an element, padding and border are included in the width and height. By default, they are separate. You created extra space with the borders (hence why, if you don't include this, the grids originally did not fit the 16 by 16 grid look, because the extra pixels from the borders forced extra space*/
 
-div {
-    border-color: black;
-    border-style: dotted; 
-}
-
 #wrapper {
     display:flex;
     flex-wrap: wrap;
-    /* border-color: black;
-    border-style: dotted;  */
+    position:absolute;
+    top: 10%; bottom: 10%; left: 5%; right: 5%;
+    margin: auto; /*centering tips from: https://blog.logrocket.com/13-ways-vertically-center-html-elements-css/ */
 }
 
 .size {
     flex: 1 1 calc((100%/16));
     /* min-width: 50px; */
     /* min-width: calc((100%/16) - .3%); THIS WORKS BUT NOT IN THE WAY YOU INTEND IT TO. This is because you cannot see the widths when everything is clumped together and has no height. NOTE: YOU ARE BASING THIS OFF THE PARENT ELEMENT WHICH IS THE PARENT DIV.*/ 
-    min-height: 40px; /* NEED SOMETHING LIKE THIS */
+    min-height: 1rem; /* NEED SOMETHING LIKE THIS */
+    border-color: black;
+    border-style: dotted; 
 }
 
 /* body *{
