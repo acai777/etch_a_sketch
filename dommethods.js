@@ -1,8 +1,12 @@
+// Allow user to change grid size 
+let originalGridSize = 3; 
+
 // First, create a 16 by 16 grid of square divs with JS
-for (let numberDivs = 0; numberDivs < 16*16; numberDivs++) {
+for (let numberDivs = 0; numberDivs < originalGridSize*originalGridSize; numberDivs++) {
     let gridBox = document.createElement('div');
     // gridBox.textContent = ".";
     gridBox.classList.add("size");
+    gridBox.style["flex-basis"] = "calc((100%/" + originalGridSize + "))";
     document.querySelector('#wrapper').appendChild(gridBox);
 }
 
