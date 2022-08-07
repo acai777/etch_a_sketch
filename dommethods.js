@@ -23,6 +23,11 @@ createGrid(originalGridSize);
 let buttonClick = document.getElementById("gridButton");
 buttonClick.addEventListener("click", () => {
     let newGridSize = document.getElementById("numberForm").value;
+
+    if (newGridSize > 100 || newGridSize < 10) {
+        window.alert("Number must be between 10 and 100, inclusive");
+        return;
+    }
     //window.alert(newGridSize);
 
     originalGridSize = newGridSize;
