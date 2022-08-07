@@ -9,11 +9,15 @@
     </head>
 
     <body>
-        <form method="GET"> 
+        <div id="header">
+            <div>
+        <!-- <form method="GET">  -->
             Please indicate how many grid cells you would like (10-100): <input type="number" id="numberForm" name="numberOfGrids" min="10" max="100">
-            <input type="submit">
-        </form>
-
+            <input type="submit" id="gridButton">
+        <!-- </form> -->
+            </div>  
+            <input type="submit" value="Reset" id="eraser">
+        </div>
         <div id="wrapper"></div>
     </body>
 </html>
